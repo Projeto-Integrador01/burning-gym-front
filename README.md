@@ -10,7 +10,6 @@ O **Burning Gym** é um site que permite que usuários criem, atualizem e exclua
 ✅ Visualização e gerenciamento de treinos  
 ✅ Cálculo automático de IMC  
 ✅ Cadastro de professores e alunos  
-✅ Atualização de perfis  
 ✅ Integração com API backend  
 
 ## 🌍 Deploy
