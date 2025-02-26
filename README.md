@@ -1,50 +1,70 @@
-# React + TypeScript + Vite
+📌 Burning Gym - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+🚀 Descrição
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este é o frontend do site Burning Gym, que permite que usuários criem, atualizem e excluam suas rotinas de treino. A interface é responsiva, moderna e intuitiva, garantindo uma ótima experiência de usuário.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+🔥 Funcionalidades
 
-- Configure the top-level `parserOptions` property like this:
+✅ Cadastro e login de usuários
+✅ Visualização e gerenciamento de treinos
+✅ Cálculo automático de IMC
+✅ Cadastro de professores e alunos
+✅ Atualização de perfis
+✅ Integração com API backend
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+🌍 Deploy
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Frontend hospedado na Vercel
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Backend hospedado no Render
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+🛠️ Tecnologias Utilizadas
+
+React.js (Biblioteca para interfaces dinâmicas)
+
+TypeScript (Tipagem estática para mais segurança)
+
+Vite (Build rápido e eficiente)
+
+Styled Components / Tailwind CSS (Estilização moderna)
+
+Axios (Requisições HTTP)
+
+React Router (Gerenciamento de rotas)
+
+🛠️ Ferramentas de Desenvolvimento
+
+Git & GitHub (Versionamento de código)
+
+ESLint & Prettier (Padronização de código)
+
+Insomnia/Postman (Testes de API)
+
+🚀 Como Rodar o Projeto
+
+1️⃣ Clone o repositório
+
+ git clone https://github.com/seu-usuario/nome-do-repositorio.git
+ cd nome-do-repositorio
+
+2️⃣ Instale as dependências
+
+ yarn install  # ou npm install
+
+3️⃣ Inicie o projeto
+
+ yarn dev  # ou npm run dev
+
+📍 O site estará disponível em http://localhost:5173
+
+
+👥 Autores
+📌 Beatriz Novais
+📌 Danilo Almeida
+📌 Gabriel Nogueira
+📌 Gustavo Correa
+📌 Rosilene Farias
+
