@@ -7,36 +7,49 @@ interface CardAulasProps {
 
 function CardAula({ aula }: CardAulasProps) {
     return (
-        <div className='border-slate-900 border 
-            flex flex-col rounded overflow-hidden justify-between'>
-                
-            <div>
-                <div className="flex w-full bg-indigo-400 py-2 px-4 items-center gap-4">
-                    <h3 className='text-lg font-bold text-center uppercase'>
-                        {aula.tipoAula}
-                    </h3>
-                </div>
-                <div className='p-4 '>
-                    <h4 className='text-lg font-semibold uppercase'>{aula.data}</h4>
-                    <p className='p-8 text-3xl bg-slate-200 h-full'>Descrição: {aula.descricao}</p>
-                    <p className='p-8 text-3xl bg-slate-200 h-full'>Tempo de duração: {aula.duracaoAula}</p>
-                    <p className='p-8 text-3xl bg-slate-200 h-full'>Professor: {aula.professor?.nome}</p>
-                    <p className='p-8 text-3xl bg-slate-200 h-full'>Aluno: {aula.aluno?.nome}</p>
-            </div>
-            <div className="flex">
-                <Link to={`/editaraula/${aula.id}`}
-                    className='w-full text-slate-100 bg-indigo-400 hover:bg-indigo-800 
-                    flex items-center justify-center py-2'>
-                    <button>Editar</button>
-                </Link>
-                <Link to={`/deletaraula/${aula.id}`} 
-                    className='text-white bg-red-400 
-                    hover:bg-red-700 w-full flex items-center justify-center'>
-                    <button>Deletar</button>
-                </Link>
-            </div>
-        </div>
+        <div className="max-x-xl mx-8 border border-gray-300 rounded-lg overflow-hidden bg-gray-100 shadow-md">
+  {/* Cabeçalho vermelho */}
+  <div className="flex w-full bg-[#D32F2F] py-3 px-5 items-center gap-4">
+    <h3 className="text-lg font-bold text-white uppercase">{aula.tipoAula}</h3>
+  </div>
+
+  {/* Conteúdo da aula */}
+  <div className="p-6 space-y-4">
+    <h4 className="text-right text-lg rounded-lg font-semibold shadow-sm">Data da Aula  : {aula.data}</h4>
+
+    <div className="p-4">
+      <p className="text-lg"><strong>Descrição:</strong> {aula.descricao}</p>
     </div>
+
+    <div className="p-4">
+      <p className="text-lg"><strong>Tempo de duração:</strong> {aula.duracaoAula}</p>
+    </div>
+
+    <div className="p-4">
+      <p className="text-lg"><strong>Professor:</strong> {aula.professor?.nome}</p>
+    </div>
+
+    <div className="p-4">
+      <p className="text-lg"><strong>Aluno:</strong> {aula.aluno?.nome}</p>
+    </div>
+  </div>
+
+  <div className="flex">
+    <Link
+      to={`/editaraula/${aula.id}`}
+      className="w-1/2 bg-[#2C2C2E] text-white hover:bg-gray-500 flex items-center justify-center py-3 transition"
+    >
+      <button>Editar</button>
+    </Link>
+
+    <Link
+      to={`/deletaraula/${aula.id}`}
+      className="w-1/2 bg-[#D32F2F] text-white hover:bg-red-400 flex items-center justify-center py-3 transition"
+    >
+      <button>Deletar</button>
+    </Link>
+  </div>
+</div>
     )
 }
 

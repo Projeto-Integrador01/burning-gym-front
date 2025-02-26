@@ -4,7 +4,7 @@ function CardGrupo() {
     return (
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
-            <div className='border flex flex-col rounded-2xl overflow-hidden justify-between'>
+            <div className='border border-gray-300 flex flex-col rounded-2xl overflow-hidden justify-between'>
             <header className='py-2 px-6 bg-[#D32F2F] text-white font-bold text-2xl'>
                 Integrante
             </header>
@@ -29,7 +29,7 @@ function CardGrupo() {
             </p>
             </div>
 
-            <div className='border flex flex-col rounded-2xl overflow-hidden justify-between'>
+            <div className='border border-gray-300 flex flex-col rounded-2xl overflow-hidden justify-between'>
             <header className='py-2 px-6 bg-[#D32F2F] text-white font-bold text-2xl'>
                 Integrante
             </header>
@@ -53,7 +53,7 @@ function CardGrupo() {
             </p>
             </div>
 
-            <div className='border flex flex-col rounded-2xl overflow-hidden justify-between'>
+            <div className='border border-gray-300 flex flex-col rounded-2xl overflow-hidden justify-between'>
             <header className='py-2 px-6 bg-[#D32F2F] text-white font-bold text-2xl'>
                 Integrante
             </header>
@@ -77,7 +77,7 @@ function CardGrupo() {
              </div>
             </p>
             </div>
-            <div className='border flex flex-col rounded-2xl overflow-hidden justify-between'>
+            <div className='border border-gray-300 flex flex-col rounded-2xl overflow-hidden justify-between'>
             <header className='py-2 px-6 bg-[#D32F2F] text-white font-bold text-2xl'>
                 Integrante
             </header>
@@ -102,7 +102,7 @@ function CardGrupo() {
              </div>
             </p>
             </div>
-            <div className='border flex flex-col rounded-2xl overflow-hidden justify-between'>
+            <div className='border border-gray-300 flex flex-col rounded-2xl overflow-hidden justify-between'>
             <header className='py-2 px-6 bg-[#D32F2F] text-white font-bold text-2xl'>
                 Integrante
             </header>
@@ -128,7 +128,7 @@ function CardGrupo() {
             </p>
             </div>
 
-            <div className='border flex flex-col rounded-2xl overflow-hidden justify-between'>
+            <div className='border border-gray-300 flex flex-col rounded-2xl overflow-hidden justify-between'>
             <header className='py-2 px-6 bg-[#D32F2F] text-white font-bold text-2xl'>
                 Integrante
             </header>
