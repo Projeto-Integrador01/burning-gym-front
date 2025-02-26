@@ -7,8 +7,8 @@ const Home = () => {
                 <h1 className="text-4xl font-bold text-white mb-5">
                     Bem-vindo à sua academia para todas as horas!
                 </h1>
-                <p className="text-2xl text-white mt-25 ml-60">
-                Acesse aqui seus treinos.
+                <p className="text-2xl text-white mt-25 ml-20">
+                Acesse aqui seus treinos personalizados a partir de seu IMC.
             </p>    
             </div>
         </div>
