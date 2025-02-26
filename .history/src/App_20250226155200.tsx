@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/navbar/Navbar";
-import Footer from "./components/footer/Footer";
+import Navbar from "./components/navbar/Navbar"; 
+import Footer from "./components/footer/Footer"; 
 import Home from "./pages/home/Home";
 import Grupo from "./pages/home/Grupo";
 import Perfil from "./pages/perfil/Perfil";
@@ -15,14 +15,19 @@ function App() {
       <Navbar />
       <div className="min-h-[80vh] flex flex-col items-center justify-center bg-[#2C2C2E]">
         <Routes>
+<<<<<<< HEAD
           <Route path="/home" element={<Home />} />
           <Route path="/sobre" element={<Grupo />} />
-          <Route path="/perfil/3" element={<Perfil />} />
-          <Route path="/professores" element={<ListaProfessor />} />
-          <Route path="/cadastrarprofessor" element={<FormProfessor />} />
-          <Route path="/editarprofessor/:id" element={<FormProfessor />} />
-          <Route path="/deletarprofessor/:id" element={<DeletarProfessor />} />
+          <Route path="/perfil/3" element={<Perfil/>}/>
+=======
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<SobreNos />} />
+          <Route path="/professores" element={<ListaProfessor/>}/>
+          <Route path="/cadastrarprofessor" element={<FormProfessor/>}/>
+          <Route path="/editarprofessor/:id" element={<FormProfessor/>}/>
+          <Route path="/deletarprofessor/:id" element={<DeletarProfessor/>}/>
 
+>>>>>>> feature_crud_professor
         </Routes>
       </div>
       <Footer />

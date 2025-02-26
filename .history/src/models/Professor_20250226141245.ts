@@ -1,7 +1,5 @@
-import { Aula } from "./Aula";
-
 export interface Professor {
-  id: number;
+  id: string;
   nome: string;
   especialidade: string;
   aula: Aula | null;

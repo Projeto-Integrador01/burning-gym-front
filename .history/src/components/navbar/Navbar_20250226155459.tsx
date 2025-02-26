@@ -15,7 +15,7 @@ function Navbar() {
           <Link to="/cadastrarprofessor"  className=" hover:scale-110 hover:text-gray-300">
             Cadastrar Professores
           </Link>
-          <Link to="/professores"  className=" hover:scale-110 hover:text-gray-300">
+          <Link to="/professores" className=" hover:text-gray-300">
             Professores
           </Link>
           <Link to="/aulas" className=" hover:scale-110 hover:text-gray-300">
