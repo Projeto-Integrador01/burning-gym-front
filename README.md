@@ -53,10 +53,10 @@ yarn dev  # ou npm run dev
 📍 O site estará disponível em `http://localhost:5173`
 
 ## 👥 Autores
-📌 Beatriz Novais  
-📌 Danilo Almeida  
-📌 Gabriel Nogueira  
-📌 Gustavo Correa  
-📌 Rosilene Farias  
-
+📌 Beatriz Novais
+📌 Camilly Silva
+📌 Danilo Almeida
+📌 Gabriel Nogueira
+📌 Gustavo Correa
+📌 Rosilene Farias
 
