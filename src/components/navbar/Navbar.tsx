@@ -18,11 +18,14 @@ function Navbar() {
           <Link to="/professores"  className=" hover:scale-110 hover:text-gray-300">
             Professores
           </Link>
-          <Link to="/aulas" className=" hover:scale-110 hover:text-gray-300">
+          <Link to="/aula" className=" hover:scale-110 hover:text-gray-300">
             Aulas
           </Link>
           <Link to="/perfil/3" className=" hover:scale-110 hover:text-gray-300">
             Perfil
+          </Link>
+          <Link to='/cadastraraula' className='hover:underline'>
+            Cadastrar Aula
           </Link>
         </div>
       </div>

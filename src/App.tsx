@@ -7,6 +7,9 @@ import Perfil from "./pages/perfil/Perfil";
 import ListaProfessor from "./components/professor/listaprofessor/ListaProfessor";
 import FormProfessor from "./components/professor/formprofessor/FormProfessor";
 import DeletarProfessor from "./components/professor/deletarprofessor/DeletarProfessor";
+import DeletarAula from "./components/aulas/deletaraula/DeletarAula";
+import FormAula from "./components/aulas/formaula/FormAula";
+import ListaAula from "./components/aulas/listaaula/ListaAula";
 
 
 function App() {
@@ -22,7 +25,10 @@ function App() {
           <Route path="/cadastrarprofessor" element={<FormProfessor />} />
           <Route path="/editarprofessor/:id" element={<FormProfessor />} />
           <Route path="/deletarprofessor/:id" element={<DeletarProfessor />} />
-
+          <Route path="/aula" element={<ListaAula/>}/>
+          <Route path="/cadastraraula" element={<FormAula/>}/>
+          <Route path="/editaraula/:id" element={<FormAula/>}/>
+          <Route path="/deletaraula/:id" element={<DeletarAula/>}/>
         </Routes>
       </div>
       <Footer />
