@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { useNavigate, useParams } from "react-router-dom"
 import { RotatingLines } from "react-loader-spinner"
 import { Aula } from "../../../models/Aula"
-import { buscar } from "../../../services/Service"
+import { buscar, deletar } from "../../../services/Service"
 
 function DeletarAula() {
 
@@ -15,9 +15,9 @@ function DeletarAula() {
 
     async function buscarPorId(id: string) {
         try {
-            await buscar(`/categorias/${id}`, setAula)
+            await buscar(`/aula/${id}`, setAula)
         } catch (error: any) {
-            alert('Erro ao buscar a categoria.')
+            alert('Erro ao buscar a aula.')
         }
     }
 
@@ -27,7 +27,7 @@ function DeletarAula() {
         }
     }, [id])
 
-    async function deletar(id: string) {
+    async function deletarAula() {
         setIsLoading(true)
 
         try {
@@ -74,7 +74,7 @@ function DeletarAula() {
                     <button
                         className='w-full text-slate-100 bg-indigo-400
                                    hover:bg-indigo-600 flex items-center justify-center'
-                        onClick={deletar}>
+                        onClick={deletarAula}>
                         {isLoading ?
                             <RotatingLines
                                 strokeColor="white"
