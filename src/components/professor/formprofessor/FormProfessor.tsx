@@ -58,7 +58,7 @@ function FormProfessor(){
           } catch (error: any) {
             if (error.toString().includes("403")) {
             } else {
-              alert("Erro ao atualizar a catergoria!");
+              alert("Erro ao atualizar o professor!");
             }
           }
         } else {
@@ -79,7 +79,7 @@ function FormProfessor(){
       }
 
       return (
-        <div className="container flex flex-col items-center justify-center mx-auto">
+        <div className="container flex flex-col items-center text-white justify-center mx-auto">
           <h1 className="text-4xl text-center my-8">
             {id ? "Atualizar Professor" : "Cadastrar Professor"}
           </h1>
@@ -89,22 +89,23 @@ function FormProfessor(){
             className="w-1/2 flex flex-col gap-4"
           >
             <div className="flex flex-col gap-2">
-              <label htmlFor="descricao">Descrição da Professor</label>
+              <label htmlFor="descricao">Nome do professor</label>
               <input
                 type="text"
                 name="nome"
                 value={professor.nome || ""}
                 onChange={atualizarEstado}
-                placeholder="escreva o nome do professor"
-                className="border-2 border-slate-700 rounded p-2"
+                placeholder="Escreva o nome do professor"
+                className="border-2 border-[#D32F2F] rounded p-2"
               />
+              <label htmlFor="descricao">Descrição do Professor</label>
                <input
                 type="text"
                 name="especialidade"
                 value={professor.especialidade || ""}
                 onChange={atualizarEstado}
                 placeholder="Escreva a especialidade do professor"
-                className="border-2 border-slate-700 rounded p-2"
+                className="border-2 border-[#D32F2F] rounded p-2"
               />
             </div>
     

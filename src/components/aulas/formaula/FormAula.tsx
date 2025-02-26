@@ -28,8 +28,6 @@ function FormAula() {
         await buscar(`/professor`, setProfessores)
     }
 
-    // Esse useEffect é responsavel por buscar os Temas e também, se o ID for diferente de undefined
-    // pegar o ID da postagem e fazer um busca no back-end em busca dos dados
     useEffect(() => {
         buscarProfessores()
 
@@ -38,7 +36,6 @@ function FormAula() {
         }
     }, [id])
 
-    // Sempre que um Tema for escolhido, fazemos o relacionamento desse novo tema com a Postagem
     useEffect(() => {
         setAula({
             ...aula,
@@ -58,8 +55,6 @@ function FormAula() {
         navigate("/aula")
     }
 
-    console.log(aula)
-
     async function gerarNovaAula(e:ChangeEvent<HTMLFormElement>){
         e.preventDefault()
         setIsLoading(true)
@@ -76,7 +71,7 @@ function FormAula() {
               await cadastrar(`/aula`, aula, setAula);
               alert('A aula foi cadastrada com sucesso!');
             } catch (error: any) {
-              alert('Erro ao aula a aula.');
+              alert('Erro ao cadastrar a aula.');
             }
           }
         
@@ -85,19 +80,32 @@ function FormAula() {
     }
 
     return ( 
-        <div className="container flex flex-col items-center justify-center mx-auto">
+        <div className="container flex flex-col items-center justify-center mx-auto text-white">
             <h1 className="text-4xl text-center my-8">
                 {id === undefined ? 'Cadastrar aula' : 'Editar aula'}
             </h1>
 
             <form className="w-1/2 flex flex-col gap-4" onSubmit={gerarNovaAula}>
                 <div className="flex flex-col gap-2">
-                <label htmlFor="descricao">Tipo da aula</label>
+                <p>Especialidade</p>
+                    <select name="professor" id="professor" className='border p-2 border-[#D32F2F] rounded'
+                        onChange={(e) => buscarProfessorId(e.currentTarget.value)}
+                    >
+                        <option value="" selected disabled>Selecione a especialidade</option>
+
+                        {professores.map((professor) => (
+                            <>
+                                <option value={professor.id} >{professor.especialidade}</option>
+                            </>
+                        ))}
+
+                    </select>
+                <label htmlFor="descricao">Categoria da Aula</label>
                     <input
                         type="text"
-                        placeholder="Insira o tipo da aula"
+                        placeholder="Musculação, cardio, alongamento etc.."
                         name='tipoAula'
-                        className="border-2 border-slate-700 rounded p-2"
+                        className="border-2 border-[#D32F2F] rounded p-2"
                         value={aula.tipoAula}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                     />
@@ -106,7 +114,7 @@ function FormAula() {
                         type="text"
                         placeholder="Descreva aqui sua aula"
                         name='descricao'
-                        className="border-2 border-slate-700 rounded p-2"
+                        className="border-2 border-[#D32F2F] rounded p-2"
                         value={aula.descricao}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                     />
@@ -115,7 +123,7 @@ function FormAula() {
                         type="text"
                         placeholder="Insira a data da aula"
                         name='data'
-                        className="border-2 border-slate-700 rounded p-2"
+                        className="border-2 border-[#D32F2F] rounded p-2"
                         value={aula.data}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                     />
@@ -124,23 +132,10 @@ function FormAula() {
                         type="text"
                         placeholder="Insira a duração da aula"
                         name='duracaoAula'
-                        className="border-2 border-slate-700 rounded p-2"
+                        className="border-2 border-[#D32F2F] rounded p-2"
                         value={aula.duracaoAula}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                     />
-                    <p>Professores</p>
-                    <select name="professor" id="professor" className='border p-2 border-slate-800 rounded'
-                        onChange={(e) => buscarProfessorId(e.currentTarget.value)}
-                    >
-                        <option value="" selected disabled>Selecione um Tema</option>
-
-                        {professores.map((professor) => (
-                            <>
-                                <option value={professor.id} >{professor.nome}</option>
-                            </>
-                        ))}
-
-                    </select>
                 </div>
                 <button
                     className="rounded text-slate-100 bg-indigo-400 

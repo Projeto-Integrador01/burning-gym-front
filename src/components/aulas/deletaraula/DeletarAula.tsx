@@ -49,21 +49,17 @@ function DeletarAula() {
 
     return (
         <div className='container w-1/3 mx-auto'>
-            <h1 className='text-4xl text-center my-4'>Deletar aula</h1>
-            <p className='text-center font-semibold mb-4'>
-                Você tem certeza de que deseja apagar a categoria a seguir?</p>
+            <h1 className='text-4xl text-white text-center my-4'>Deletar aula</h1>
+            <p className='text-center text-white font-semibold mb-4'>
+                Você tem certeza de que deseja apagar a aula a seguir?</p>
             <div className='border flex flex-col rounded-2xl overflow-hidden justify-between'>
-                <header
-                    className='py-2 px-6 bg-blue-400 text-white font-bold text-2xl'>
-                    <p>{}</p>
-                </header>
-                <h3 className='text-lg font-bold text-center uppercase'>
-                        {aula.tipoAula}
-                </h3>
-                <h4 className='text-lg font-semibold uppercase'>{aula.data}</h4>
+                <div className="flex w-full bg-[#D32F2F] py-3 px-5 items-center gap-4">
+                    <h3 className="text-lg font-bold text-white uppercase">{aula.professor?.especialidade}</h3>
+                    <h4 className="text-right text-lg rounded-lg font-semibold shadow-sm">Data da Aula  : {aula.data}</h4>
+                </div>
+                    <p className='p-8 text-3xl bg-slate-200 h-full'>Professor: {aula.professor?.nome}</p>
                     <p className='p-8 text-3xl bg-slate-200 h-full'>Descrição: {aula.descricao}</p>
                     <p className='p-8 text-3xl bg-slate-200 h-full'>Tempo de duração: {aula.duracaoAula}</p>
-                    <p className='p-8 text-3xl bg-slate-200 h-full'>Professor: {aula.professor?.nome}</p>
                     <p className='p-8 text-3xl bg-slate-200 h-full'>Aluno: {aula.aluno?.nome}</p>
                 <div className="flex">
                     <button

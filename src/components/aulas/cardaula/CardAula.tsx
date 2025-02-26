@@ -10,23 +10,25 @@ function CardAula({ aula }: CardAulasProps) {
         <div className="max-x-xl mx-8 border border-gray-300 rounded-lg overflow-hidden bg-gray-100 shadow-md">
   {/* Cabeçalho vermelho */}
   <div className="flex w-full bg-[#D32F2F] py-3 px-5 items-center gap-4">
-    <h3 className="text-lg font-bold text-white uppercase">{aula.tipoAula}</h3>
+    <h3 className="text-lg font-bold text-white uppercase">{aula.professor?.especialidade}</h3>
   </div>
 
   {/* Conteúdo da aula */}
   <div className="p-6 space-y-4">
     <h4 className="text-right text-lg rounded-lg font-semibold shadow-sm">Data da Aula  : {aula.data}</h4>
-
+    
+    <div className="p-4">
+      <p className="text-lg"><strong>Professor:</strong> {aula.professor?.nome}</p>
+    </div>
+    <div className="p-4">
+      <p className="text-lg"><strong>Categoria da Aula:</strong> {aula.tipoAula}</p>
+    </div>
     <div className="p-4">
       <p className="text-lg"><strong>Descrição:</strong> {aula.descricao}</p>
     </div>
 
     <div className="p-4">
       <p className="text-lg"><strong>Tempo de duração:</strong> {aula.duracaoAula}</p>
-    </div>
-
-    <div className="p-4">
-      <p className="text-lg"><strong>Professor:</strong> {aula.professor?.nome}</p>
     </div>
 
     <div className="p-4">
