@@ -5,7 +5,7 @@ function Navbar() {
     <div className="w-full text-white flex justify-center py-4 bg-[#D32F2F] px-4">
       <div className="container flex justify-between text-lg">
         <Link to="/home" className="text-2xl font-bold text-white hover:scale-110 hover:text-gray-300">
-          Home
+          Burning Gym
         </Link>
 
         <div className="flex gap-4">
@@ -24,7 +24,7 @@ function Navbar() {
           <Link to="/perfil/3" className=" hover:scale-110 hover:text-gray-300">
             Perfil
           </Link>
-          <Link to='/cadastraraula' className='hover:underline'>
+          <Link to='/cadastraraula' className= "hover:scale-110 hover:text-gray-300" >
             Cadastrar Aula
           </Link>
         </div>
