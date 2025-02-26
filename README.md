@@ -12,7 +12,7 @@ O **Burning Gym** é um site desenvolvido para auxiliar usuários na criação, 
 
 ## 🌍 Deploy
 - **Frontend**: Hospedado na [Vercel](https://vercel.com/)  
-- **Backend**: Hospedado no [Render](https://render.com/)  
+- **Backend**: Hospedado no [Render](https://burning-gym.onrender.com/)  
 
 ## 🛠️ Tecnologias Utilizadas
 - **React.js** – Biblioteca para interfaces dinâmicas  
