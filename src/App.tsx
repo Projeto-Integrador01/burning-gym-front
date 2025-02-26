@@ -3,6 +3,7 @@ import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer"; 
 import Home from "./pages/home/Home";
 import SobreNos from "./pages/sobrenos/SobreNos";
+import Perfil from "./pages/perfil/Perfil";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/home" element={<SobreNos />} />
+          <Route path="/perfil/3" element={<Perfil/>}/>
         </Routes>
       </div>
       <Footer />
