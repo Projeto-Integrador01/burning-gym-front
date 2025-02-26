@@ -18,7 +18,6 @@ function App() {
           <Route path="/home" element={<SobreNos />} />
           <Route path="/professores" element={<ListaProfessor/>}/>
           <Route path="/cadastrarprofessor" element={<FormProfessor/>}/>
-          <Route path="/editarprofessor/:id" element={<FormProfessor/>}/>
           <Route path="/deletarprofessor/:id" element={<DeletarProfessor/>}/>
 
         </Routes>

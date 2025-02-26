@@ -5,7 +5,6 @@ import Home from "./pages/home/Home";
 import SobreNos from "./pages/sobrenos/SobreNos";
 import ListaProfessor from "./components/professor/listaprofessor/ListaProfessor";
 import FormProfessor from "./components/professor/formprofessor/FormProfessor";
-import DeletarProfessor from "./components/professor/deletarprofessor/DeletarProfessor";
 
 
 function App() {
@@ -18,9 +17,6 @@ function App() {
           <Route path="/home" element={<SobreNos />} />
           <Route path="/professores" element={<ListaProfessor/>}/>
           <Route path="/cadastrarprofessor" element={<FormProfessor/>}/>
-          <Route path="/editarprofessor/:id" element={<FormProfessor/>}/>
-          <Route path="/deletarprofessor/:id" element={<DeletarProfessor/>}/>
-
         </Routes>
       </div>
       <Footer />

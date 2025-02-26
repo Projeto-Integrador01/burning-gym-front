@@ -2,7 +2,7 @@ import { Aluno } from "./Aluno";
 import { Professor } from "./Professor";
 
 export interface Aula {
-  id: number;
+  id: string;
   tipoAula: string;
   descricao: string;
   data: string;

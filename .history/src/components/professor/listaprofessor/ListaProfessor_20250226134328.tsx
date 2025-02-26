@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Professor } from "../../../models/Professor";
 import { buscar } from "../../../services/Service";
 import { DNA } from "react-loader-spinner";
-import CardProfessor from "../cardprofessor/CardProfessor";
 
 
 function ListaProfessor(){
@@ -53,6 +52,17 @@ return (
 )
 
 
-}
 
-export default ListaProfessor;
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -12,9 +12,6 @@ function Navbar() {
           <Link to="/sobre" className="text-white hover:text-gray-300">
             Sobre Nós
           </Link>
-          <Link to="/cadastrarprofessor" className=" hover:text-gray-300">
-            Cadastrar Professores
-          </Link>
           <Link to="/professores" className=" hover:text-gray-300">
             Professores
           </Link>
