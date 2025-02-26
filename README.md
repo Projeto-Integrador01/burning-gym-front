@@ -1,70 +1,62 @@
-📌 Burning Gym - Frontend
+# 📌 Burning Gym - Frontend
 
+## 🚀 Descrição
 
-🚀 Descrição
+O **Burning Gym** é um site que permite que usuários criem, atualizem e excluam suas rotinas de treino. A interface é responsiva, moderna e intuitiva, garantindo uma ótima experiência para os usuários.
 
-Este é o frontend do site Burning Gym, que permite que usuários criem, atualizem e excluam suas rotinas de treino. A interface é responsiva, moderna e intuitiva, garantindo uma ótima experiência de usuário.
+## 🔥 Funcionalidades
 
+✅ Cadastro e login de usuários  
+✅ Visualização e gerenciamento de treinos  
+✅ Cálculo automático de IMC  
+✅ Cadastro de professores e alunos  
+✅ Atualização de perfis  
+✅ Integração com API backend  
 
-🔥 Funcionalidades
+## 🌍 Deploy
 
-✅ Cadastro e login de usuários
-✅ Visualização e gerenciamento de treinos
-✅ Cálculo automático de IMC
-✅ Cadastro de professores e alunos
-✅ Atualização de perfis
-✅ Integração com API backend
+- **Frontend** hospedado na **Vercel**  
+- **Backend** hospedado no **Render**  
 
-🌍 Deploy
+## 🛠️ Tecnologias Utilizadas
 
-Frontend hospedado na Vercel
+- **React.js** (Biblioteca para interfaces dinâmicas)
+- **TypeScript** (Tipagem estática para mais segurança)
+- **Vite** (Build rápido e eficiente)
+- **Styled Components / Tailwind CSS** (Estilização moderna)
+- **Axios** (Requisições HTTP)
+- **React Router** (Gerenciamento de rotas)
 
-Backend hospedado no Render
+## 🛠️ Ferramentas de Desenvolvimento
 
-🛠️ Tecnologias Utilizadas
+- **Git & GitHub** (Versionamento de código)
+- **Insomnia/Postman** (Testes de API)
 
-React.js (Biblioteca para interfaces dinâmicas)
+## 🚀 Como Rodar o Projeto
 
-TypeScript (Tipagem estática para mais segurança)
+### 1️⃣ Clone o repositório
+```sh
+git clone https://github.com/seu-usuario/nome-do-repositorio.git
+cd nome-do-repositorio
+```
 
-Vite (Build rápido e eficiente)
+### 2️⃣ Instale as dependências
+```sh
+yarn install  # ou npm install
+```
 
-Styled Components / Tailwind CSS (Estilização moderna)
+### 3️⃣ Inicie o projeto
+```sh
+yarn dev  # ou npm run dev
+```
 
-Axios (Requisições HTTP)
+📍 O site estará disponível em `http://localhost:5173`
 
-React Router (Gerenciamento de rotas)
+## 👥 Autores
+📌 Beatriz Novais  
+📌 Danilo Almeida  
+📌 Gabriel Nogueira  
+📌 Gustavo Correa  
+📌 Rosilene Farias  
 
-🛠️ Ferramentas de Desenvolvimento
-
-Git & GitHub (Versionamento de código)
-
-ESLint & Prettier (Padronização de código)
-
-Insomnia/Postman (Testes de API)
-
-🚀 Como Rodar o Projeto
-
-1️⃣ Clone o repositório
-
- git clone https://github.com/seu-usuario/nome-do-repositorio.git
- cd nome-do-repositorio
-
-2️⃣ Instale as dependências
-
- yarn install  # ou npm install
-
-3️⃣ Inicie o projeto
-
- yarn dev  # ou npm run dev
-
-📍 O site estará disponível em http://localhost:5173
-
-
-👥 Autores
-📌 Beatriz Novais
-📌 Danilo Almeida
-📌 Gabriel Nogueira
-📌 Gustavo Correa
-📌 Rosilene Farias
 
