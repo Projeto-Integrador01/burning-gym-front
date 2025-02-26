@@ -1,9 +1,9 @@
-// import card grupo
+import CardGrupo from "../../components/grupo/cardgrupo/CardGrupo";
 
 const Grupo = () => {
     return (
       <div>
-        <h1>Card grupo</h1>
+        <CardGrupo/>
       </div>
     );
   };
