@@ -9,7 +9,7 @@ function Navbar() {
         </Link>
 
         <div className="flex gap-4">
-        <Link to="/perfil/4" className=" hover:scale-110 hover:text-gray-300">
+        <Link to="/perfil/7" className=" hover:scale-110 hover:text-gray-300">
             Perfil
           </Link>
           <Link to="/professores"  className=" hover:scale-110 hover:text-gray-300">

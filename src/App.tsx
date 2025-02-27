@@ -18,9 +18,10 @@ function App() {
       <Navbar />
       <div className="min-h-[80vh] flex flex-col items-center justify-center bg-[#4f4f53]">
         <Routes>
+        <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/sobre" element={<Grupo />} />
-          <Route path="/perfil/4" element={<Perfil />} />
+          <Route path="/perfil/7" element={<Perfil />} />
           <Route path="/professores" element={<ListaProfessor />} />
           <Route path="/cadastrarprofessor" element={<FormProfessor />} />
           <Route path="/editarprofessor/:id" element={<FormProfessor />} />

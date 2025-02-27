@@ -20,7 +20,7 @@ function CardPerfil() {
   }
 
   useEffect(() => {
-    buscarPorId("4");
+    buscarPorId("7");
   }, []);
 
   return (
