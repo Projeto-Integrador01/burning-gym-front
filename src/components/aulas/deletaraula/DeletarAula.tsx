@@ -48,43 +48,54 @@ function DeletarAula() {
     }
 
     return (
-        <div className='container w-1/3 mx-auto'>
-            <h1 className='text-4xl text-white text-center my-4'>Deletar aula</h1>
+        <div>
+        <h1 className='text-4xl text-white text-center my-4'>Deletar aula</h1>
             <p className='text-center text-white font-semibold mb-4'>
                 Você tem certeza de que deseja apagar a aula a seguir?</p>
-            <div className='border flex flex-col rounded-2xl overflow-hidden justify-between'>
-                <div className="flex w-full bg-[#D32F2F] py-3 px-5 items-center gap-4">
-                    <h3 className="text-lg font-bold text-white uppercase">{aula.professor?.especialidade}</h3>
-                    <h4 className="text-right text-lg rounded-lg font-semibold shadow-sm">Data da Aula  : {aula.data}</h4>
-                </div>
-                    <p className='p-8 text-3xl bg-slate-200 h-full'>Professor: {aula.professor?.nome}</p>
-                    <p className='p-8 text-3xl bg-slate-200 h-full'>Descrição: {aula.descricao}</p>
-                    <p className='p-8 text-3xl bg-slate-200 h-full'>Tempo de duração: {aula.duracaoAula}</p>
-                    <p className='p-8 text-3xl bg-slate-200 h-full'>Aluno: {aula.aluno?.nome}</p>
-                <div className="flex">
-                    <button
-                        className='text-slate-100 bg-red-400 hover:bg-red-600 w-full py-2'
-                        onClick={retornar}>
-                        Não
-                    </button>
-                    <button
-                        className='w-full text-slate-100 bg-indigo-400
-                                   hover:bg-indigo-600 flex items-center justify-center'
-                        onClick={deletarAula}>
-                        {isLoading ?
-                            <RotatingLines
-                                strokeColor="white"
-                                strokeWidth="5"
-                                animationDuration="0.75"
-                                width="24"
-                                visible={true}
-                            /> :
-                            <span>Sim</span>
-                        }
-                    </button>
-                </div>
-            </div>
-        </div>
+        <div className="min-w-[350px] border border-gray-300 rounded-lg overflow-hidden bg-gray-100 shadow-md">
+  {/* Cabeçalho laranja */}
+  <div className="flex w-full bg-[#ff9f00] py-3 px-5 items-center gap-4">
+    <h3 className="text-lg font-bold text-white uppercase">{aula.professor?.especialidade}</h3>
+    
+  </div>
+
+  {/* Conteúdo da aula */}
+<br/>
+  <div className="p-4">
+    <div className="p-4">
+      <p className="text-lg"><strong>Professor:</strong> {aula.professor?.nome}</p>
+    </div>
+    <div className="p-4">
+      <p className="text-lg"><strong>Descrição:</strong> {aula.descricao}</p>
+    </div>
+    <div className="p-4">
+      <p className="text-lg"><strong>Tempo de duração:</strong> {aula.duracaoAula}</p>
+    </div>
+    <div className="p-4">
+      <p className="text-lg"><strong>Aluno:</strong> {aula.aluno?.nome}</p>
+    </div>
+  </div>
+
+  {/* Botões de ação */}
+  <div className="flex">
+    <button
+      className="text-slate-100 bg-[#2C2C2E] hover:bg-red-500 w-full py-2"
+      onClick={retornar}>
+      Não
+    </button>
+    <button
+      className="w-full text-slate-100 bg-[#2C2C2E] border-l border-white hover:bg-[#ff9f00] flex items-center justify-center"
+      onClick={deletarAula}>
+      {isLoading ? (
+        <RotatingLines strokeColor="white" strokeWidth="5" animationDuration="0.75" width="24" visible={true} />
+      ) : (
+        <span>Sim</span>
+      )}
+    </button>
+  </div>
+</div>
+</div>
+
     )
 }
 export default DeletarAula

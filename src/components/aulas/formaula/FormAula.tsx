@@ -88,14 +88,15 @@ function FormAula() {
             <form className="w-1/2 flex flex-col gap-4" onSubmit={gerarNovaAula}>
                 <div className="flex flex-col gap-2">
                 <p>Especialidade</p>
-                    <select name="professor" id="professor" className='border p-2 border-[#D32F2F] rounded'
+                    <select name="professor" id="professor" className='border p-2 border-[#ff9f00] rounded'
                         onChange={(e) => buscarProfessorId(e.currentTarget.value)}
                     >
                         <option value="" selected disabled>Selecione a especialidade</option>
 
                         {professores.map((professor) => (
                             <>
-                                <option value={professor.id} >{professor.especialidade}</option>
+                            <select className="focus:outline-none focus:ring-2 focus:ring-orange-500"></select>
+                                <option className="text-black " value={professor.id} >{professor.especialidade}</option>
                             </>
                         ))}
 
@@ -105,7 +106,7 @@ function FormAula() {
                         type="text"
                         placeholder="Musculação, cardio, alongamento etc.."
                         name='tipoAula'
-                        className="border-2 border-[#D32F2F] rounded p-2"
+                        className="border-2 border-[#ff9f00] rounded p-2"
                         value={aula.tipoAula}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                     />
@@ -114,7 +115,7 @@ function FormAula() {
                         type="text"
                         placeholder="Descreva aqui sua aula"
                         name='descricao'
-                        className="border-2 border-[#D32F2F] rounded p-2"
+                        className="border-2 border-[#ff9f00] rounded p-2"
                         value={aula.descricao}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                     />
@@ -123,7 +124,7 @@ function FormAula() {
                         type="text"
                         placeholder="Insira a data da aula"
                         name='data'
-                        className="border-2 border-[#D32F2F] rounded p-2"
+                        className="border-2 border-[#ff9f00] rounded p-2"
                         value={aula.data}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                     />
@@ -132,14 +133,14 @@ function FormAula() {
                         type="text"
                         placeholder="Insira a duração da aula"
                         name='duracaoAula'
-                        className="border-2 border-[#D32F2F] rounded p-2"
+                        className="border-2 border-[#ff9f00] rounded p-2"
                         value={aula.duracaoAula}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                     />
                 </div>
                 <button
-                    className="rounded text-slate-100 bg-indigo-400 
-                               hover:bg-indigo-800 w-1/2 py-2 mx-auto flex justify-center"
+                    className="rounded text-slate-100 bg-[#ff9f00] 
+                               hover:bg-orange-500 w-1/2 py-2 mx-auto flex justify-center"
                     type="submit">
                     {isLoading ?
                         <RotatingLines

@@ -5,7 +5,7 @@ function CardGrupo() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
             <div className='border border-gray-300 flex flex-col rounded-2xl overflow-hidden justify-between'>
-            <header className='py-2 px-6 bg-[#D32F2F] text-white font-bold text-2xl'>
+            <header className='py-2 px-6 bg-[#ff9f00] text-white font-bold text-2xl'>
                 Integrante
             </header>
             <p className='p-8 text-3xl bg-slate-200 h-full'>
@@ -19,7 +19,10 @@ function CardGrupo() {
                 <p className='text-3xl font-bold text-center'>Beatriz Novais</p>
                 <p className='text-base text-gray-600'>Olá me chamo Beatriz Novais 🙂
                 💻 Desenvolvedora Full Stack | Apaixonada pelo mundo de tecnologia
-                Gosto muito de mangás e livros 📖 e adoro jogos de console 🎮</p>
+                Gosto muito de mangás e livros 📖 e adoro jogos de console🎮</p>
+                <br/>
+                <br/>
+                <br/>
                 <div className='flex space-x-50 justify-center mt-4'>
                 <a href="https://www.linkedin.com/in/beatriznovais/" target="_blank" className= "hover:scale-110 hover:text-[#0077B5] transition-transform duration-300">
                 <LinkedinLogo size={48} weight="thin" /></a>
@@ -30,7 +33,7 @@ function CardGrupo() {
             </div>
 
             <div className='border border-gray-300 flex flex-col rounded-2xl overflow-hidden justify-between'>
-            <header className='py-2 px-6 bg-[#D32F2F] text-white font-bold text-2xl'>
+            <header className='py-2 px-6 bg-[#ff9f00] text-white font-bold text-2xl'>
                 Integrante
             </header>
             <p className='p-8 text-3xl bg-slate-200 h-full'>
@@ -42,8 +45,12 @@ function CardGrupo() {
                 />
                 </div>
                 <p className='text-3xl font-bold text-center'>Camily Silva</p>
-                <p className='text-base text-gray-600'>Estudante de Engenharia de Software | Desenvolvedora Fullstack | 
-                    Apaixonada por Inovação</p>
+                <p className='text-base text-gray-600'>💻 Oi, eu sou a Camilly e estou desbravando o universo 
+                    do Front-end! Apaixonada por tecnologia, UX e interfaces bem-feitas, adoro transformar ideias 
+                    em experiências interativas e acessíveis. Trabalho com HTML, CSS, JavaScript, TypeScript e React, 
+                    sempre buscando criar soluções intuitivas e envolventes.
+
+🚀 Além do Front-end, também exploro o Back-end com Java, Spring Boot e APIs REST, porque entender o todo torna a jornada ainda mais emocionante.</p>
                 <div className='flex space-x-50 justify-center mt-4'>
                 <a href="https://www.linkedin.com/in/camillydasilvacunha/" target="_blank" className= "hover:scale-110 hover:text-[#0077B5] transition-transform duration-300">
                 <LinkedinLogo size={48} weight="thin" /></a>
@@ -54,7 +61,7 @@ function CardGrupo() {
             </div>
 
             <div className='border border-gray-300 flex flex-col rounded-2xl overflow-hidden justify-between'>
-            <header className='py-2 px-6 bg-[#D32F2F] text-white font-bold text-2xl'>
+            <header className='py-2 px-6 bg-[#ff9f00] text-white font-bold text-2xl'>
                 Integrante
             </header>
             <p className='p-8 text-3xl bg-slate-200 h-full'>
@@ -69,6 +76,8 @@ function CardGrupo() {
                 <p className='text-base text-gray-600'>💻 Oiiiie, sou Danilo, Desenvolvedor Full Stack que adora jogos de terror 👻 
                     e passar horas personalizando em jogos de simulação 🎮 e, claro, ☕ café é meu combustível. 
                     Sou apaixonado por aprender 📚 e explorar novas tecnologias, para entender o que há de novo no mundo digital.</p>
+                <br/>
+                <br/>
                 <div className='flex space-x-50 justify-center mt-4'>
                 <a href="https://www.linkedin.com/in/danilo-ferreira-de-almeida/" target="_blank" className= "hover:scale-110 hover:text-[#0077B5] transition-transform duration-300">
                 <LinkedinLogo size={48} weight="thin" /></a>
@@ -78,7 +87,7 @@ function CardGrupo() {
             </p>
             </div>
             <div className='border border-gray-300 flex flex-col rounded-2xl overflow-hidden justify-between'>
-            <header className='py-2 px-6 bg-[#D32F2F] text-white font-bold text-2xl'>
+            <header className='py-2 px-6 bg-[#ff9f00] text-white font-bold text-2xl'>
                 Integrante
             </header>
             <p className='p-8 text-3xl bg-slate-200 h-full'>
@@ -103,7 +112,7 @@ function CardGrupo() {
             </p>
             </div>
             <div className='border border-gray-300 flex flex-col rounded-2xl overflow-hidden justify-between'>
-            <header className='py-2 px-6 bg-[#D32F2F] text-white font-bold text-2xl'>
+            <header className='py-2 px-6 bg-[#ff9f00] text-white font-bold text-2xl'>
                 Integrante
             </header>
             <p className='p-8 text-3xl bg-slate-200 h-full'>
@@ -114,7 +123,7 @@ function CardGrupo() {
                     className="w-32 h-32 rounded-full object-cover border-4 border-gray-300 shadow-lg"
                 />
                 </div>
-                <p className='text-3xl font-bold text-center'>Gustavo Correa</p>
+                <p className='text-3xl font-bold text-center'>Gustavo Corrêa</p>
                 <p className='text-base text-gray-600'>Olá! 👋 Me chamo Gustavo Corrêa e tenho 20 anos.
                 🚀 Estudante de programação e integrante da turma 79 do Bootcamp FullStack Java da Generation Brasil.
                 💻 Apaixonado por tecnologia e sempre em busca de novos aprendizados.
@@ -129,7 +138,7 @@ function CardGrupo() {
             </div>
 
             <div className='border border-gray-300 flex flex-col rounded-2xl overflow-hidden justify-between'>
-            <header className='py-2 px-6 bg-[#D32F2F] text-white font-bold text-2xl'>
+            <header className='py-2 px-6 bg-[#ff9f00] text-white font-bold text-2xl'>
                 Integrante
             </header>
             <p className='p-8 text-3xl bg-slate-200 h-full'>

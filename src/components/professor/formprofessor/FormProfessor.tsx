@@ -96,21 +96,21 @@ function FormProfessor(){
                 value={professor.nome || ""}
                 onChange={atualizarEstado}
                 placeholder="Escreva o nome do professor"
-                className="border-2 border-[#D32F2F] rounded p-2"
+                className="border-2 border-[#ff9f00] rounded p-2"
               />
-              <label htmlFor="descricao">Descrição do Professor</label>
+              <label htmlFor="descricao">Especialidade do Professor</label>
                <input
                 type="text"
                 name="especialidade"
                 value={professor.especialidade || ""}
                 onChange={atualizarEstado}
                 placeholder="Escreva a especialidade do professor"
-                className="border-2 border-[#D32F2F] rounded p-2"
+                className="border-2 border-[#ff9f00] rounded p-2"
               />
             </div>
     
             <button
-              className="rounded text-slate-100 bg-indigo-400 hover:bg-indigo-800 w-1/2 py-2 mx-auto flex justify-center"
+              className="rounded text-slate-100 bg-[#ff9f00] hover:bg-orange-500 w-1/2 py-2 mx-auto flex justify-center"
               type="submit"
             >
               {isLoading ? "Carregando..." : id ? "Atualizar" : "Cadastrar"}

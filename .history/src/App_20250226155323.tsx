@@ -17,7 +17,7 @@ function App() {
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/sobre" element={<Grupo />} />
-          <Route path="/perfil/3" element={<Perfil />} />
+          <Route path="/perfil/4" element={<Perfil />} />
           <Route path="/professores" element={<ListaProfessor />} />
           <Route path="/cadastrarprofessor" element={<FormProfessor />} />
           <Route path="/editarprofessor/:id" element={<FormProfessor />} />

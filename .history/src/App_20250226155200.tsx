@@ -18,7 +18,7 @@ function App() {
 <<<<<<< HEAD
           <Route path="/home" element={<Home />} />
           <Route path="/sobre" element={<Grupo />} />
-          <Route path="/perfil/3" element={<Perfil/>}/>
+          <Route path="/perfil/4" element={<Perfil/>}/>
 =======
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<SobreNos />} />

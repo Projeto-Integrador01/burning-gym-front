@@ -10,7 +10,7 @@ import {
     const data = new Date().getFullYear();
   
     return (
-      <div className="bg-[#D32F2F] text-white">
+      <div className="bg-[#2C2C2E] text-white">
       <div className="container mx-auto py-6 flex items-center justify-between px-8">
         
         {/* Ícone à esquerda */}
