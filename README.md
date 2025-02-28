@@ -1,50 +1,55 @@
-# React + TypeScript + Vite
+# 📌 Burning Gym - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Descrição
+O **Burning Gym** é um site desenvolvido para auxiliar usuários na criação, atualização e exclusão de suas rotinas de treino. A plataforma conta com uma interface responsiva, moderna e intuitiva, proporcionando uma excelente experiência ao usuário.
 
-Currently, two official plugins are available:
+## 🔥 Funcionalidades
+✅ Cadastro e login de usuários  
+✅ Visualização e gerenciamento de treinos  
+✅ Cálculo automático de IMC  
+✅ Cadastro de professores e alunos  
+✅ Integração com API backend  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌍 Deploy
+- **Frontend**: Hospedado na [Vercel](https://vercel.com/)  
+- **Backend**: Hospedado no [Render](https://burning-gym.onrender.com/)  
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologias Utilizadas
+- **React.js** – Biblioteca para interfaces dinâmicas  
+- **TypeScript** – Tipagem estática para mais segurança  
+- **Vite** – Build rápido e eficiente  
+- **Styled Components / Tailwind CSS** – Estilização moderna  
+- **Axios** – Requisições HTTP  
+- **React Router** – Gerenciamento de rotas  
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🛠️ Ferramentas de Desenvolvimento
+- **Git & GitHub** – Versionamento de código  
+- **Insomnia/Postman** – Testes de API  
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🚀 Como Rodar o Projeto
+1️⃣ Clone o repositório:
+```bash
+git clone https://github.com/seu-usuario/nome-do-repositorio.git
+cd nome-do-repositorio
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+2️⃣ Instale as dependências:
+```bash
+yarn install  # ou npm install
 ```
+
+3️⃣ Inicie o projeto:
+```bash
+yarn dev  # ou npm run dev
+```
+
+📍 O site estará disponível em: [http://localhost:5173](http://localhost:5173)
+
+## 👥 Autores
+- 📌 Beatriz Novais  
+- 📌 Camilly Silva  
+- 📌 Danilo Almeida  
+- 📌 Gabriel Nogueira  
+- 📌 Gustavo Correa  
+- 📌 Rosilene Farias  
+
